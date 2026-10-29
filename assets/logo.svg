@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" fill="#0a0f0a"/>
+  
+  <!-- Background tactical grid -->
+  <g stroke="#c8ffb0" stroke-width="0.5" opacity="0.08">
+    <line x1="0" y1="64" x2="256" y2="64"/>
+    <line x1="0" y1="128" x2="256" y2="128"/>
+    <line x1="0" y1="192" x2="256" y2="192"/>
+    <line x1="64" y1="0" x2="64" y2="256"/>
+    <line x1="128" y1="0" x2="128" y2="256"/>
+    <line x1="192" y1="0" x2="192" y2="256"/>
+  </g>
+
+  <!-- Corner brackets -->
+  <g stroke="#39ff14" stroke-width="2.5" fill="none" opacity="0.7">
+    <polyline points="16,40 16,16 40,16"/>
+    <polyline points="216,16 240,16 240,40"/>
+    <polyline points="240,216 240,240 216,240"/>
+    <polyline points="40,240 16,240 16,216"/>
+  </g>
+
+  <!-- Fractured delta triangle - main body -->
+  <g transform="translate(128, 128)">
+    <!-- Left fracture piece -->
+    <polygon points="0,-72 -58,52 -12,52" fill="#39ff14" opacity="0.9"/>
+    <!-- Right fracture piece -->
+    <polygon points="0,-72 58,52 12,52" fill="#c8ffb0" opacity="0.85"/>
+    
+    <!-- Fracture line/void between -->
+    <polygon points="-4,-68 4,-68 6,52 -6,52" fill="#0a0f0a"/>
+    
+    <!-- Triangle outline -->
+    <polygon points="0,-72 -58,52 58,52" fill="none" stroke="#39ff14" stroke-width="2.5"/>
+    
+    <!-- Inner fracture crack lines -->
+    <line x1="-4" y1="-60" x2="-10" y2="20" stroke="#0a0f0a" stroke-width="2"/>
+    <line x1="4" y1="-60" x2="10" y2="20" stroke="#0a0f0a" stroke-width="2"/>
+    
+    <!-- Small fracture shard displacement -->
+    <polygon points="-42,20 -34,16 -38,32" fill="#0a0f0a" opacity="0.6"/>
+    <polygon points="42,20 34,16 38,32" fill="#0a0f0a" opacity="0.6"/>
+  </g>
+
+  <!-- Targeting reticle crosshair overlaid and piercing triangle -->
+  <g transform="translate(128, 128)" stroke="#ff3b30" fill="none">
+    <!-- Outer reticle ring -->
+    <circle r="54" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6"/>
+    
+    <!-- Crosshair - horizontal -->
+    <line x1="-78" y1="0" x2="-22" y2="0" stroke-width="2"/>
+    <line x1="22" y1="0" x2="78" y2="0" stroke-width="2"/>
+    
+    <!-- Crosshair - vertical -->
+    <line x1="0" y1="-78" x2="0" y2="-22" stroke-width="2"/>
+    <line x1="0" y1="22" x2="0" y2="78" stroke-width="2"/>
+    
+    <!-- Center gap ticks -->
+    <line x1="-22" y1="0" x2="-16" y2="0" stroke-width="3"/>
+    <line x1="16" y1="0" x2="22" y2="0" stroke-width="3"/>
+    <line x1="0" y1="-22" x2="0" y2="-16" stroke-width="3"/>
+    <line x1="0" y1="16" x2="0" y2="22" stroke-width="3"/>
+    
+    <!-- Center dot -->
+    <circle r="3.5" fill="#ff3b30" stroke="none"/>
+    
+    <!-- Corner reticle marks -->
+    <line x1="-40" y1="-40" x2="-30" y2="-30" stroke-width="1.5"/>
+    <line x1="40" y1="-40" x2="30" y2="-30" stroke-width="1.5"/>
+    <line x1="-40" y1="40" x2="-30" y2="30" stroke-width="1.5"/>
+    <line x1="40" y1="40" x2="30" y2="30" stroke-width="1.5"/>
+  </g>
+
+  <!-- ESP scan lines / targeting data -->
+  <g stroke="#39ff14" stroke-width="0.8" opacity="0.4">
+    <line x1="60" y1="200" x2="90" y2="200"/>
+    <line x1="60" y1="206" x2="80" y2="206"/>
+    <line x1="60" y1="212" x2="96" y2="212"/>
+    <line x1="166" y1="200" x2="196" y2="200"/>
+    <line x1="176" y1="206" x2="196" y2="206"/>
+    <line x1="160" y1="212" x2="196" y2="212"/>
+  </g>
+
+  <!-- Status indicator dots -->
+  <g>
+    <circle cx="200" cy="40" r="3" fill="#39ff14"/>
+    <circle cx="210" cy="40" r="3" fill="#39ff14" opacity="0.5"/>
+    <circle cx="220" cy="40" r="3" fill="#ff3b30"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="128" y="238" font-family="monospace" font-size="9" fill="#c8ffb0" text-anchor="middle" letter-spacing="3" opacity="0.6">DELTA-FORCE-ESP</text>
+</svg>
