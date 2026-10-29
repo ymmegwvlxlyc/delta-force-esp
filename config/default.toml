@@ -1,0 +1,20 @@
+target_process = "DeltaForceClient-Win64-Shipping.exe"
+
+[overlay]
+width = 1920
+height = 1080
+vsync = false
+menu_hotkey = 45  # INSERT
+
+[aim]
+fov = 8.0
+smooth = 3.2
+bone = "head"
+visible_only = true
+key = 2  # RMB
+
+[esp]
+box_color = [0, 255, 90, 220]
+skeleton = true
+health_bar = true
+max_distance = 400.0
